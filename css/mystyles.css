@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,500,700&display=swap');
+
+html, body {
+    margin: 0px !important;
+    padding: 0px !important;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+.h1000 {
+    height: 1000px;
+}
+
+.top-grey-bar {
+    background-color: #262626;
+    height: 50px;
+}
+
+.top-white-bar {
+    background-color: white;
+    height: 150px;
+}
+
+.bottom-grey-bar {
+    background-color: #262626;
+    height: 350px;
+}
+
+.top-ribbon {
+    position: absolute;
+    background-color: #00838F;
+    left: 8%;
+    top: 0px;
+    height: 220px;
+    width: 8%;
+}
+
+.top-ribbon > img {
+    width: 80%;
+    position: absolute;
+    bottom: 0px;
+    margin: 10%;
+}
+
+.bottom-ribbon {
+    position: absolute;
+    background-color: #00838F;
+    left: 8%;
+    bottom: 0px;
+    height: 370px;
+    width: 8%;
+}
+
+.bottom-ribbon > img {
+    width: 80%;
+    margin: 10%;
+}
+
+@media only screen and (max-width: 600px) {
+    .top-ribbon {
+        height: 125px;
+        width: 20%;
+        left: 15%;
+    }
+    
+    .bottom-ribbon {
+        height: 145px;
+        width: 20%;
+        left: 15%;
+    }
+
+    .top-grey-bar {
+        height: 25px;
+    }
+
+    .top-white-bar {
+        height: 85px;
+    }
+
+    .bottom-grey-bar {
+        height: 130px;
+    }
+}
