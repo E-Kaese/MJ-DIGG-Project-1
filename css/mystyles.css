@@ -56,6 +56,15 @@ html, body {
     margin: 10%;
 }
 
+.nav-row {
+    margin: 0px !important;
+}
+
+.nav-card {
+    height: 10vw;
+    background-color: white;
+}
+
 @media only screen and (max-width: 600px) {
     .top-ribbon {
         height: 125px;
