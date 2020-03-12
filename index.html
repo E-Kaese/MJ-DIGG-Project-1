@@ -11,8 +11,8 @@
     <script src="js/bootstrap.min.js"></script>
 </head>
 
-<body class="bg-dark">
-    <div>
+<body>
+    <div class="position-sticky fixed-top shadow">
         <div class="top-ribbon">
             <img src="assets/life-buddy-logo-white.png" alt="logo">
         </div>
@@ -20,14 +20,14 @@
         <div class="top-white-bar"></div>
     </div>
 
-    <section class="slide-wrapper">
+    <div>
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                 <li data-target="#myCarousel" data-slide-to="1"></li>
                 <li data-target="#myCarousel" data-slide-to="2"></li>
             </ol>
-
+    
             <div class="carousel-inner">
                 <div class="carousel-item w-100 active">
                     <img src="assets/hero-image-01.jpg" alt="Women with PC">
@@ -39,7 +39,8 @@
                     <img src="assets/hero-image-03.jpg" alt="Grey Haired Women">
                 </div>
             </div>
-
+    
+            <!-- TODO: Swap out bootstrap chevrons with font-awesome arrow -->
             <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="sr-only">Previous</span>
@@ -48,14 +49,23 @@
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
             </a>
+        </div>
     </div>
-    </section>
 
-    <div class="row nav-row">
-        <div class="col nav-card mx-5"></div>
-        <div class="col nav-card mx-5"></div>
-        <div class="col nav-card mx-5"></div>
-        <div class="col nav-card mx-5"></div>
+    <div class="hero-block shadow">
+        <h1>LIFE BUDDY</h1>
+        <p>Your best friend. Your companion.</p>
+        <!-- TODO: Put font-awesome arrow icon in -->
+        <div class="hero-block-button-align">
+            <a class="arrow-button">FIND YOUR LIFE BUDDY</a>
+        </div>
+    </div>
+
+    <div class="nav-row">
+        <div class="nav-card shadow"></div>
+        <div class="nav-card shadow"></div>
+        <div class="nav-card shadow"></div>
+        <div class="nav-card shadow"></div>
     </div>
 
     <div class="h1000"></div>
