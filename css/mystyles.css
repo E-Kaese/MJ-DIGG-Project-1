@@ -21,7 +21,7 @@ html, body {
 
 .bottom-grey-bar {
     background-color: #262626;
-    height: 350px;
+    height: 250px;
 }
 
 .bottom-grey-bar > a {
@@ -42,6 +42,7 @@ html, body {
     height: 220px;
     width: 8%;
     z-index: 1;
+    cursor: pointer;
 }
 
 .top-ribbon > img {
@@ -56,9 +57,10 @@ html, body {
     background-color: #00838F;
     left: 8%;
     bottom: 0px;
-    height: 370px;
+    height: 270px;
     width: 8%;
     z-index: 1;
+    cursor: pointer;
 }
 
 .bottom-ribbon > img {
@@ -129,12 +131,12 @@ html, body {
     position: absolute;
     display: flex;
     flex-direction: column;
-    top: 380px;
+    top: 400px;
     left: 8%;
     width: 28vw;
     height: 200px;
     background-color: white;
-    padding: 20px 10px 10px 20px;
+    padding: 20px;
 }
 
 .hero-block > p {
@@ -192,6 +194,24 @@ html, body {
 
 .cg {
     color: #A5D6A7 !important;
+}
+
+.mt-200 {
+    margin-top: 200px !important;
+}
+
+.nav-link {
+    color: #262626;
+    font-size: 22px;
+}
+
+.nav-link.active {
+    color: white;
+    background-color: #00838F;
+}
+
+.nav-link:hover {
+    color: #4FB3BF;
 }
 
 @media only screen and (max-width: 600px) {
