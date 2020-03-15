@@ -5,14 +5,8 @@ html, body {
     padding: 0px !important;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
-}
-
-.h1000 {
-    height: 1000px;
-}
-
-.h600 {
-    height: 600px;
+    scroll-behavior: smooth;
+    scroll-padding-top: 120px;
 }
 
 .top-grey-bar {
@@ -28,6 +22,16 @@ html, body {
 .bottom-grey-bar {
     background-color: #262626;
     height: 350px;
+}
+
+.bottom-grey-bar > a {
+    color: #A5D6A7;
+    font-weight: 700;
+}
+
+.bottom-grey-bar > a:hover {
+    color: #75A478;
+    text-decoration: none;
 }
 
 .top-ribbon {
@@ -73,19 +77,39 @@ html, body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 
 .nav-card {
-    height: 220px;
-    width: 220px;
+    height: 300px;
+    width: 300px;
     background-color: white;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 28px;
+    cursor: pointer;
+    color: black;
+}
+
+.nav-card:hover {
+    text-decoration: none;
+    color: black;
+    box-shadow: 0 6px 10px 0px rgba(0, 0, 0, 0.4);
 }
 
 .carousel-indicators > li {
     width: 15px;
+    height: 15px;
+    border-radius: 50%;
     margin-bottom: 50px;
-    box-shadow: 0 3px 5px 0px rgba(0, 0, 0, 0.4);
+    margin-left: 8px;
+    margin-right: 8px;
+    background-color: #A5D6A7 !important;
+    opacity: 0.6;
+}
+
+.carousel-indicators > .active {
+    opacity: 1;
 }
 
 .carousel-control-prev, .carousel-control-next {
@@ -121,14 +145,53 @@ html, body {
     background-color: #4FB3BF;
     color: white !important;
     padding: 15px;
+    cursor: pointer;
 }
 
-.hero-block-button-align {
+.arrow-button:hover{
+    background-color: #00838F;
+}
+
+.arrow-button-align {
     display: flex;
     flex: 1;
     flex-direction: row;
     justify-content: flex-end;
     align-items: flex-end;
+}
+
+.fs36 {
+    font-size: 36px !important;
+}
+
+.pt-350 {
+    padding-top: 350px !important;
+}
+
+.pt-150 {
+    padding-top: 150px !important;
+}
+
+.py-150 {
+    padding-top: 150px !important;
+    padding-bottom: 150px !important;
+}
+
+.content > h1 {
+    font-size: 48px;
+}
+
+.content > p {
+    font-size: 28px;
+    text-align: justify;
+}
+
+.pl-25 {
+    padding-left: 25%;
+}
+
+.cg {
+    color: #A5D6A7 !important;
 }
 
 @media only screen and (max-width: 600px) {

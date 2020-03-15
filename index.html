@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,8 +8,7 @@
     <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/mystyles.css">
-    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -27,7 +27,7 @@
                 <li data-target="#myCarousel" data-slide-to="1"></li>
                 <li data-target="#myCarousel" data-slide-to="2"></li>
             </ol>
-    
+
             <div class="carousel-inner">
                 <div class="carousel-item w-100 active">
                     <img src="assets/hero-image-01.jpg" alt="Women with PC">
@@ -39,14 +39,13 @@
                     <img src="assets/hero-image-03.jpg" alt="Grey Haired Women">
                 </div>
             </div>
-    
-            <!-- TODO: Swap out bootstrap chevrons with font-awesome arrow -->
+
             <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <i class="fa fa-chevron-left fs36 cg" aria-hidden="true"></i>
                 <span class="sr-only">Previous</span>
             </a>
             <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <i class="fa fa-chevron-right fs36 cg" aria-hidden="true"></i>
                 <span class="sr-only">Next</span>
             </a>
         </div>
@@ -55,29 +54,90 @@
     <div class="hero-block shadow">
         <h1>LIFE BUDDY</h1>
         <p>Your best friend. Your companion.</p>
-        <!-- TODO: Put font-awesome arrow icon in -->
-        <div class="hero-block-button-align">
-            <a class="arrow-button">FIND YOUR LIFE BUDDY</a>
+        <div class="arrow-button-align">
+            <a class="arrow-button">FIND YOUR LIFE BUDDY<i class="ml-3 fa fa-long-arrow-right"></i></a>
         </div>
     </div>
 
     <div class="nav-row">
-        <div class="nav-card shadow"></div>
-        <div class="nav-card shadow"></div>
-        <div class="nav-card shadow"></div>
-        <div class="nav-card shadow"></div>
+        <a href="#matchedToYou" class="nav-card shadow px-5 pt-0 pb-2 text-center font-weight-bold">
+            <div class="w-100 h-75 justify-content-center">
+                <img class="w-100 mt-3" src="assets/people_icon.png" alt="People Icon">
+            </div>
+            MATCHED PERFECTLY TO YOU
+        </a>
+        <a href="#whatBuddyCanDo" class="nav-card shadow p-5 text-center font-weight-bold">
+            <img class="w-75 mb-3" src="assets/info_icon.png" alt="Info Icon">
+            WHAT YOUR BUDDY CAN DO FOR YOU
+        </a>
+        <a href="#findYourLifeBuddy" class="nav-card shadow p-5 text-center font-weight-bold">
+            <img class="w-75 mb-3" src="assets/check_icon.png" alt="Check Icon">
+            FIND YOUR LIFE BUDDY
+        </a>
+        <a href="#becomeALifeBuddy" class="nav-card shadow p-5 text-center font-weight-bold">
+            <img class="w-75 mb-3" src="assets/handshake_icon.png" alt="Handshake Icon">
+            BECOME A LIFE BUDDY
+        </a>
     </div>
 
-    <div class="h1000"></div>
-    
+    <div class="row px8 m-0 pt-350 align-items-center" id="matchedToYou">
+        <img class="col-md-2 w-100 p-0" src="assets/people_icon.png" alt="">
+        <div class="col-md-10 content pl-5">
+            <h1>MATCHED PERFECTLY TO YOU</h1>
+            <p>Your buddy is chosen specifically for you with your personallity and other traits in mind. You just
+                answer some questions during sign up and your very own Life Buddy will be in touch with you shortly.</p>
+        </div>
+    </div>
+
+    <div class="row px8 m-0 pt-150 align-items-center" id="whatBuddyCanDo">
+        <img class="col-md-2 w-75 h-75 p-0" src="assets/info_icon.png" alt="">
+        <div class="col-md-10 content pl-5">
+            <h1>WHAT YOUR BUDDY CAN DO FOR YOU</h1>
+            <p>Whether you need someone to chat or play a game with, your buddy has your back. Whenever you send your
+                buddy a message, they'll get a notification from us.</p>
+        </div>
+    </div>
+
+    <div class="row px8 m-0 pt-150 align-items-center" id="findYourLifeBuddy">
+        <img class="col-md-2 w-100 p-0" src="assets/check_icon.png" alt="">
+        <div class="col-md-10 content pl-5">
+            <h1>FIND YOUR LIFE BUDDY</h1>
+            <p>You're a few questions and clicks away from finding your Life Buddy! Just enter your details and answer
+                our questions and you're almost there.</p>
+            <div class="arrow-button-align">
+                <a class="arrow-button">FIND YOUR LIFE BUDDY<i class="ml-3 fa fa-long-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="row px8 m-0 py-150 align-items-center" id="becomeALifeBuddy">
+        <img class="col-md-2 w-100 p-0" src="assets/handshake_icon.png" alt="">
+        <div class="col-md-10 content pl-5">
+            <h1>BECOME A LIFE BUDDY</h1>
+            <p>Want to become a Life Buddy? Follow our sign up process to become available to help others.</p>
+            <div class="arrow-button-align">
+                <a class="arrow-button">BECOME A LIFE BUDDY<i class="ml-3 fa fa-long-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+
     <div class="position-relative">
-        <div class="bottom-grey-bar"></div>
         <div class="bottom-ribbon">
             <img src="assets/life-buddy-logo-white.png" alt="logo">
         </div>
+        <div class="bottom-grey-bar text-white pl-25 pt-5">
+            <p>Copyright © Old Mutual Limited 2020</p>
+            <a href="">Disclaimer</a>
+            <br>
+            <a href="">Privacy Policy</a>
+        </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
     <script src="js/bootstrap.js"></script>
 </body>
 
